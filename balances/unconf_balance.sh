@@ -5,10 +5,10 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 log_location='/home/ubiq/unconf_balance.log'
 
 suffix=' zec'
-api_url='https://zec.suprnova.cc/index.php?page=api&action=getuserbalance&api_key="$api_key"&id=45019'
-
+api_url='https://zec.suprnova.cc/index.php?page=api&action=getuserbalance&api_key='$api_key'&id=45019'
+echo $api_url
 #Grab balance from Suprnovapool API, extract unconfirmed balance only
-unconf_balance="$(curl -X GET '$api_url' | jq '.getuserbalance.data.unconfirmed')"
+unconf_balance="$(curl -X GET $api_url | jq '.getuserbalance.data.unconfirmed')"
 
 #Legacy logging
 echo "$timestamp $unconf_balance$suffix" >> $log_location
