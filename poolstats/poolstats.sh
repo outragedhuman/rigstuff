@@ -1,4 +1,4 @@
-#Set up some variables for logging
+#Timestamp for logging
 timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 
 #Legacy log file write location (deprecated, will remove soon)
