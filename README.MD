@@ -2,7 +2,7 @@ Mostly a private repo, this won't help you much. I may eventually port this for 
 
 Dependencies:
 
-1. MySQL-Connector for Python. Follow the answer here for installation http://stackoverflow.com/questions/31748278/how-do-you-install-mysql-connector-python-development-version-through-pip
+1. simplemysql from here: https://github.com/knadh/simplemysql
 
 INSTALLATION
 
