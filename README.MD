@@ -1,5 +1,9 @@
 Mostly a private repo, this won't help you much. I may eventually port this for public use once it matures a bit. 
 
+Dependencies:
+
+1. MySQL-Connector for Python. Follow the answer here for installation http://stackoverflow.com/questions/31748278/how-do-you-install-mysql-connector-python-development-version-through-pip
+
 INSTALLATION
 
 sensors:
