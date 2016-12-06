@@ -5,7 +5,6 @@ import simplemysql
 
 #Timestamp for logging
 timestamp = '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
-print timestamp
 
 explorer_url='https://api.zcha.in/v1/mainnet/network'
 
@@ -30,8 +29,6 @@ resp = make_request(pool_url)
 
 #Pull out just the unconfirmed balance
 unconf_balance = resp.json()['getuserbalance']['data']['unconfirmed']
-
-print '{:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
 
 try:
     #Make database connection using parameters from config file
