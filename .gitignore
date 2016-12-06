@@ -1,3 +1,4 @@
 #Config files
 **/config.py*
 **/*.pyc
+**/*.swp
