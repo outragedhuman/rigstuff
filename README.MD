@@ -2,7 +2,9 @@ Mostly a private repo, this won't help you much. I may eventually port this for 
 
 Dependencies:
 
-1. simplemysql from here: https://github.com/knadh/simplemysql
+1. simplemysql (sudo pip install simplemysql)
+  a. may require mysql_config (sudo apt-get install libmysqlclient-dev)
+2. Python Requests
 
 INSTALLATION
 
