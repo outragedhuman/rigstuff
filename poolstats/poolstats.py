@@ -30,6 +30,9 @@ resp = make_request(pool_url)
 #Pull out just the unconfirmed balance
 unconf_balance = resp.json()['getuserbalance']['data']['unconfirmed']
 
+#TODO: Need to add this to the database
+pool_hashrate = resp.json()['getuserbalance']['data']['hashrate']
+
 try:
     #Make database connection using parameters from config file
     db = simplemysql.SimpleMysql(
